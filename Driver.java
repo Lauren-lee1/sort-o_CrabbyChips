@@ -4,30 +4,35 @@ import java.util.ArrayList;
 public class Driver{
 
   public static void main(String[] args){
-    //Bubble Sort
+        Sorts kara = new Sorts();
+
+        //Bubble Sort
         System.out.println( "\nTesting Bubble Sort..." );
-	ArrayList bubbleWorst = new ArrayList<Integer>();
-	bubbleWorst.add(5);
+	      ArrayList bubbleWorst = new ArrayList<Integer>();
+	      bubbleWorst.add(5);
         bubbleWorst.add(4);
         bubbleWorst.add(3);
         bubbleWorst.add(2);
         bubbleWorst.add(1);
         System.out.println( "\nArrayList bubbleWorst before sorting:\n" + bubbleWorst );
-        Sorts.bubbleSort(bubbleWorst);
+        System.out.println( "\nSwaps: " );
+        kara.bubbleSort(bubbleWorst);
+        System.out.println("...expecting: 10" );
         System.out.println( "\nArrayList bubbleWorst after sorting:\n" + bubbleWorst );
-	System.out.println( "\nSwaps: " + Sorts.bubbleSort(bubbleWorst) );
 
         ArrayList bubbleBest = new ArrayList<Integer>();
         bubbleBest.add(1);
         bubbleBest.add(2);
         bubbleBest.add(3);
-        bubbleBest.add(5);
         bubbleBest.add(4);
+        bubbleBest.add(5);
         System.out.println( "\nArrayList bubbleBest before sorting:\n" + bubbleBest );
-        Sorts.bubbleSort(bubbleBest);
+        System.out.println( "\nSwaps: " );
+        kara.bubbleSort(bubbleBest);
+        System.out.println("...expecting: 0" );
         System.out.println( "\nArrayList bubbleBest after sorting:\n" + bubbleBest );
-        System.out.println( "\nSwaps: " + Sorts.bubbleSort(bubbleBest) );
-    //Selection Sort
+
+        //Selection Sort
         System.out.println( "\nTesting Selection Sort..." );
         ArrayList selectionWorst = new ArrayList<Integer>();
         selectionWorst.add(5);
@@ -38,20 +43,21 @@ public class Driver{
         System.out.println( "\nArrayList selectionWorst before sorting:\n" + selectionWorst );
         Sorts.selectionSort(selectionWorst);
         System.out.println( "\nArrayList selectionWorst after sorting:\n" + selectionWorst );
-        System.out.println( "\nSwaps: " + Sorts.selectionSort(selectionWorst) );
+        System.out.println( "\nSwaps: " + Sorts.selectionSort(selectionWorst)+ " expecting: 10" );
 
         ArrayList selectionBest = new ArrayList<Integer>();
         selectionBest.add(1);
         selectionBest.add(2);
         selectionBest.add(3);
-        selectionBest.add(5);
         selectionBest.add(4);
+        selectionBest.add(5);
         System.out.println( "\nArrayList selectionBest before sorting:\n" + selectionBest );
         Sorts.selectionSort(selectionBest);
         System.out.println( "\nArrayList selectionBest after sorting:\n" + selectionBest );
-        System.out.println( "\nSwaps: " + Sorts.selectionSort(selectionBest) );
-    //Insertion Sort
-	System.out.println( "\nTesting Insertion Sort..." );
+        System.out.println( "\nSwaps: " + Sorts.selectionSort(selectionBest)+ " expecting: 0" );
+
+        //Insertion Sort
+	      System.out.println( "\nTesting Insertion Sort..." );
         ArrayList insertionWorst = new ArrayList<Integer>();
         insertionWorst.add(5);
         insertionWorst.add(4);
@@ -61,7 +67,7 @@ public class Driver{
         System.out.println( "\nArrayList insertionWorst before sorting:\n" + insertionWorst );
         Sorts.bubbleSort(insertionWorst);
         System.out.println( "\nArrayList insertionWorst after sorting:\n" + insertionWorst );
-        System.out.println( "\nSwaps: " + Sorts.insertionSort(insertionWorst) );
+        System.out.println( "\nSwaps: " + Sorts.insertionSort(insertionWorst) +" expecting: 10" );
 
         ArrayList insertionBest = new ArrayList<Integer>();
         insertionBest.add(1);
@@ -72,8 +78,7 @@ public class Driver{
         System.out.println( "\nArrayList insertionBest before sorting:\n" + insertionBest );
         Sorts.bubbleSort(insertionBest);
         System.out.println( "\nArrayList insertionBest after sorting:\n" + insertionBest );
-        System.out.println( "\nSwaps: " + Sorts.insertionSort(insertionBest) );
+        System.out.println( "\nSwaps: " + Sorts.insertionSort(insertionBest) +" expecting: 10" );
   }
 
 }
-

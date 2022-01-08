@@ -8,8 +8,8 @@ public class Driver{
 
         //Bubble Sort
         System.out.println( "\nTesting Bubble Sort..." );
-	      ArrayList bubbleWorst = new ArrayList<Integer>();
-	      bubbleWorst.add(5);
+        ArrayList bubbleWorst = new ArrayList<Integer>();
+        bubbleWorst.add(5);
         bubbleWorst.add(4);
         bubbleWorst.add(3);
         bubbleWorst.add(2);

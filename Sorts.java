@@ -55,7 +55,7 @@ public class Sorts{
     //return counter;
   }//end selectionSort
 
-  public static voidinsertionSort( ArrayList<Comparable> data )
+  public static void insertionSort( ArrayList<Comparable> data )
   {
     int comparisons = 0;
     for(int x = 0; x < data.size()-1; x++  ) {

@@ -3,27 +3,32 @@ import java.util.ArrayList;
 
 public class Sorts{
 
-  static int bubbleSwap = 0;
-  static int selectionSwap = 0;
-  static int insertionSwap = 0;
+  static int _bubbleSwap = 0;
+  static int _selectionSwap = 0;
+  static int _insertionSwap = 0;
+
+  static int _bubbleComparison = 0;
+  static int _selectionComparison = 0;
+  static int _insertionComparison = 0;
 
   public static void bubbleSort( ArrayList<Comparable> data )
   {
-    int comparisons = 0;
     for(int i = 0; i < data.size()-1; i++) {
       for(int j = data.size() - 1; j > i; j--) {
-	      comparisons++;
+	      _bubbleComparison++;
         if(data.get(j).compareTo(data.get(j - 1)) < 0) {
-	        bubbleSwap++;
+	        _bubbleSwap++;
           int temp = (int)data.get(j);
           data.set(j, data.get(j - 1));
           data.set(j-1, temp);
         }
       }
     }
-    System.out.println(bubbleSwap);
+    System.out.println("Comparisons: " + _bubbleComparison);
+    System.out.println("Swaps: " + _bubbleSwap);
   //  int counter = bubbleSwap;
-    bubbleSwap = 0;
+    _bubbleSwap = 0;
+    _bubbleComparison = 0;
   //  return counter;
   }
 
@@ -32,32 +37,34 @@ public class Sorts{
     //note: this version places greatest value at "rightmost" end
     //maxPos will point to position of SELECTION (greatest value)
     int maxPos;
-    int comparisons = 0;
     for(int pass = data.size()-1; pass >= 0; pass--) {
       //System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
       maxPos = 0;
       for( int i = 0; i < pass+1; i++ ) {
-	      comparisons++;
+	      _selectionComparison++;
         if (data.get(i).compareTo(data.get(maxPos)) > 0) {
-	        selectionSwap++;
           maxPos = i;
         }
         //System.out.println( "maxPos: " + maxPos );//diag
         //System.out.println( data );//diag
       }
-      data.add(pass+1,data.get(maxPos));
-      data.remove(maxPos);
+      if (maxPos != pass){
+        data.add(pass+1,data.get(maxPos));
+        data.remove(maxPos);
+        _selectionSwap++;
+      }
       //System.out.println( "after swap: " +  data );//diag
     }
     //int counter = selectionSwap;
-    System.out.println(selectionSwap);
-    selectionSwap = 0;
+    System.out.println("Comparisons: " + _selectionComparison);
+    System.out.println("Swaps: " + _selectionSwap);
+    _selectionSwap = 0;
+    _selectionComparison = 0;
     //return counter;
   }//end selectionSort
 
   public static void insertionSort( ArrayList<Comparable> data )
   {
-    int comparisons = 0;
     for(int x = 0; x < data.size()-1; x++  ) {
       //partition marks first item in unsorted region
       int partition = x;
@@ -65,11 +72,11 @@ public class Sorts{
       //System.out.println( data );
       //traverse sorted region from right to left
       for( int i = x+1; i>0; i-- ) {
-	       comparisons++;
+	       _insertionComparison++;
         // "walk" the current item to where it belongs
         // by swapping adjacent items
         if (data.get(i).compareTo(data.get(i-1)) < 0  ) {
-          insertionSwap++;
+          _insertionSwap++;
           //System.out.println( "swap indices "+(i-1)+" & "+i+"..." ); //diag
           data.add(i-1,data.get(i));
           data.remove(i+1);
@@ -80,8 +87,10 @@ public class Sorts{
       }
     }
     //int counter = insertionSwap;
-    System.out.println(insertionSwap);
-    insertionSwap = 0;
+    System.out.println("Comparisons: " + _insertionComparison);
+    System.out.println("Swaps: " + _insertionSwap);
+    _insertionComparison = 0;
+    _insertionSwap = 0;
     //return counter;
   }//end insertionSortV
 

@@ -53,7 +53,9 @@
 
 ## Conclusions
 ### Arrays Populated of the Random Elements:
-*
+* For Bubble Sort, the Control takes the same amount of comparisons as the other cases and takes about half of the swaps that were required for the worst case scenario.
+* For Selection Sort, the Control takes the same amount of comparisons as the other cases and takes a number of swaps in between the best and worst case scenarios.
+* For Insertion Sort, the Control takes a number of comparisons as well as a number of swaps in between the best and worst case scenarios.
 ### Arrays Populated in Ascending Order:
 * This is the best case scenario for Bubble Sort and Insertion Sort, as it required no swaps for both sorts.
 * However, Bubble Sort required more comparisons than Insertion Sort, 45 for Bubble Sort and 9 for Insertion Sort, although it being the best case scenario for both sorts.
@@ -65,5 +67,6 @@
 * This is the best case scenario for all three sorts, as it required no swaps for Bubble Sort and Insertion Sort, and required the least amount of swaps for Selection Sort.
 * While in Selection Sort, it is less efficient than Bubble Sort and Insertion Sort because it still requires swaps even though it would not need swaps theoretically.
 ### Final Conclusions:
-* ! The most efficient sorts for the best case scenarios were Bubble Sort and Insertion Sort because they required no swaps and fewer comparisons.
-* ! Selection Sort is the most efficient in the worst case scenario because it requires less swaps, but in the best case scenarios it requires more comparisons and sometimes more swaps than necessary.
+* The most efficient sort overall for the best case scenario is Insertion Sort as it required no swaps and the least amount of comparisons.
+* The most efficient sorts for the best case scenarios are Bubble Sort and Insertion Sort because they required no swaps and fewer comparisons.
+* Selection Sort is the least efficient in both the best and worst case scenarios because it still requires swaps in the best case scenario and requires the most comparisons both for cases.

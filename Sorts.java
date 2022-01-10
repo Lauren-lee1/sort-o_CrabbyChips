@@ -11,7 +11,7 @@ public class Sorts{
   static int _selectionComparison = 0;
   static int _insertionComparison = 0;
 
-  public static void bubbleSort( ArrayList<Comparable> data )
+  public static int bubbleSort( ArrayList<Comparable> data )
   {
     for(int i = 0; i < data.size()-1; i++) {
       for(int j = data.size() - 1; j > i; j--) {
@@ -25,7 +25,7 @@ public class Sorts{
       }
     }
     System.out.println("Comparisons: " + _bubbleComparison);
-    System.out.println("Swaps: " + _bubbleSwap);
+    System.out.println("Swaps: ");
   //  int counter = bubbleSwap;
     _bubbleSwap = 0;
     _bubbleComparison = 0;

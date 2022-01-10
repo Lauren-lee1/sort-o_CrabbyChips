@@ -3,11 +3,32 @@ import java.util.ArrayList;
 
 public class Driver{
 
+  static int _bubbleAvg=0;
+  static int _insertionAvg=0;
+  static int _selectionAvg=0;
+
+  public static ArrayList populate( int size, int lo, int hi ) {
+    ArrayList<Integer> retAL = new ArrayList<Integer>();
+    while( size > 0 ) {
+      //     offset + rand int on interval [lo,hi]
+      retAL.add( lo + (int)( (hi-lo+1) * Math.random() ) );
+      size--;
+    }
+    return retAL;
+  }
+
   public static void main(String[] args){
         Sorts kara = new Sorts();
 
         //Bubble Sort
         System.out.println( "\nTesting Bubble Sort..." );
+
+        System.out.println("Bubble Sort Control");
+        for (int x = 0; x < 10; x++){
+          kara.bubbleSort(populate(5,1,5));
+        }
+
+
         ArrayList bubbleBest = new ArrayList<Integer>();
         bubbleBest.add(1);
         bubbleBest.add(2);

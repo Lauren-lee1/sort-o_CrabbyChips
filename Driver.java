@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Driver{
 
-  public static ArrayList populate( int size, int lo, int hi ) {
+  public static ArrayList populateRand( int size, int lo, int hi ) {
     ArrayList<Integer> retAL = new ArrayList<Integer>();
     while( size > 0 ) {
       //     offset + rand int on interval [lo,hi]
@@ -13,9 +13,104 @@ public class Driver{
     return retAL;
   }
 
-  public static void main(String[] args){
-        Sorts kara = new Sorts();
+  public static ArrayList populateAscend( int size ) {
+    ArrayList<Integer> retAL = new ArrayList<Integer>();
+    for( int i = 0; i < size; i++ ) {
+        retAL.add(i);
+    }
+    return retAL;
+  }
 
+  public static ArrayList populateDescend( int size ) {
+    ArrayList<Integer> retAL = new ArrayList<Integer>();
+    for( int i = size - 1; i >= 0; i-- ) {
+        retAL.add(i);
+    }
+    return retAL;
+  }
+
+  public static ArrayList populateSame( int size ) {
+    ArrayList<Integer> retAL = new ArrayList<Integer>();
+    for( int i = 0; i < size; i++ ) {
+        retAL.add(0);
+    }
+    return retAL;
+  }
+
+  public static void main(String[] args){
+
+      Sorts kara = new Sorts();
+
+      ArrayList<Integer> test = new ArrayList<Integer>();
+      test.add(10);
+      test.add(100);
+      test.add(1000);
+
+      System.out.println("Bubble Sort:");
+      System.out.println();
+
+      System.out.println("Control:");
+      for( Integer i : test ) {
+        kara.bubbleSort(populateRand(i, 0, i-1));
+      }
+      System.out.println();
+      System.out.println("Ascending:");
+      for( Integer i : test ) {
+        kara.bubbleSort(populateAscend(i));
+      }
+      System.out.println();
+
+      System.out.println("Descending:");
+      for( Integer i : test ) {
+        kara.bubbleSort(populateDescend(i));
+      }
+
+      System.out.println();
+      System.out.println();
+      System.out.println("Selection Sort:");
+      System.out.println();
+
+      System.out.println("Control:");
+      for( Integer i : test ) {
+        kara.selectionSort(populateRand(i, 0, i-1));
+      }
+      System.out.println();
+
+      System.out.println("Ascending:");
+      for( Integer i : test ) {
+        kara.selectionSort(populateAscend(i));
+      }
+      System.out.println();
+
+      System.out.println("Descending:");
+      for( Integer i : test ) {
+        kara.selectionSort(populateDescend(i));
+      }
+      System.out.println();
+      System.out.println();
+
+      System.out.println("Insertion Sort:");
+      System.out.println();
+
+      System.out.println("Control:");
+      for( Integer i : test ) {
+        kara.insertionSort(populateRand(i, 0, i-1));
+      }
+      System.out.println();
+
+      System.out.println("Ascending:");
+      for( Integer i : test ) {
+        kara.insertionSort(populateAscend(i));
+      }
+      System.out.println();
+
+      System.out.println("Descending:");
+      for( Integer i : test ) {
+        kara.insertionSort(populateDescend(i));
+      }
+
+
+/**
         //Bubble Sort
         System.out.println( "\nTesting Bubble Sort..." );
         System.out.println();
@@ -147,5 +242,6 @@ public class Driver{
         kara.bubbleSort(insertionWorst);
         System.out.print("...expecting: 10 comparisons and 10 swaps\n" );
         System.out.println( "ArrayList insertionWorst after sorting: " + insertionWorst );
+        **/
     }
 }

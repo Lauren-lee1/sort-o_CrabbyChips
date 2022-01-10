@@ -9,10 +9,10 @@
 
 ## Best and Worst Case Scenario for Each
 ### Bubble Sort:
-* Best: [1, 1, 1, 1, 1]; [1, 2, 3, 4, 5]
+* Best: [1, 1, 1, 1, 1]; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   * Description: An ArrayList of the same elements or of elements in ascending order.
   * Reason:
-  * Total Comparisons: 10
+  * Total Comparisons: 45
   * Total Swaps: 0
   * Big-O Classification: O(n)
 

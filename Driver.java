@@ -19,7 +19,7 @@ public class Driver{
         //Bubble Sort
         System.out.println( "\nTesting Bubble Sort..." );
 
-        System.out.println("Bubble Sort Control");
+        System.out.println("Bubble Sort Control:");
         for (int x = 0; x < 10; x++){
           kara.bubbleSort(populate(5,1,5));
         }
@@ -58,16 +58,16 @@ public class Driver{
         System.out.println( "ArrayList bubbleWorst after sorting:\n" + bubbleWorst );
 
         System.out.println();
-        System.out.println("----------------------------------------------");
+        System.out.println("------------------------------------------------------------------");
+        System.out.println();
 
         //Selection Sort
+        System.out.println( "\nTesting Selection Sort..." );
 
         System.out.println("Selection Sort Control");
         for (int x = 0; x < 10; x++){
           kara.selectionSort(populate(5,1,5));
         }
-
-        System.out.println( "\nTesting Selection Sort..." );
 
         ArrayList selectionSame = new ArrayList<Integer>();
         selectionSame.add(1);
@@ -103,16 +103,16 @@ public class Driver{
         System.out.println( "ArrayList selectionWorst after sorting:\n" + selectionWorst );
 
         System.out.println();
-        System.out.println("----------------------------------------------");
+        System.out.println("------------------------------------------------------------------");
+        System.out.println();
 
         //Insertion Sort
+        System.out.println( "\nTesting Insertion Sort..." );
 
         System.out.println("Insertion Sort Control");
         for (int x = 0; x < 10; x++){
           kara.insertionSort(populate(5,1,5));
         }
-
-	      System.out.println( "\nTesting Insertion Sort..." );
 
         ArrayList insertionBestS = new ArrayList<Integer>();
         insertionBestS.add(1);

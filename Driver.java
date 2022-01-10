@@ -31,10 +31,10 @@ public class Driver{
         bubbleBestS.add(1);
         bubbleBestS.add(1);
         bubbleBestS.add(1);
-        System.out.println( "\nArrayList bubbleBestS before sorting:\n" + bubbleBestS );
+        System.out.println( "\nArrayList bubbleBestS before sorting: " + bubbleBestS );
         kara.bubbleSort(bubbleBestS);
         System.out.print("...expecting: 10 comparisons and 0 swaps\n" );
-        System.out.println( "ArrayList bubbleBestS after sorting:\n" + bubbleBestS );
+        System.out.println( "ArrayList bubbleBestS after sorting: " + bubbleBestS );
 
         ArrayList bubbleBestA = new ArrayList<Integer>();
         bubbleBestA.add(1);
@@ -42,10 +42,10 @@ public class Driver{
         bubbleBestA.add(3);
         bubbleBestA.add(4);
         bubbleBestA.add(5);
-        System.out.println( "\nArrayList bubbleBestA before sorting:\n" + bubbleBestA );
+        System.out.println( "\nArrayList bubbleBestA before sorting: " + bubbleBestA );
         kara.bubbleSort(bubbleBestA);
         System.out.print("...expecting: 10 comparisons and 0 swaps\n" );
-        System.out.println( "ArrayList bubbleBestA after sorting:\n" + bubbleBestA );
+        System.out.println( "ArrayList bubbleBestA after sorting: " + bubbleBestA );
 
         ArrayList bubbleWorst = new ArrayList<Integer>();
         bubbleWorst.add(5);
@@ -53,10 +53,10 @@ public class Driver{
         bubbleWorst.add(3);
         bubbleWorst.add(2);
         bubbleWorst.add(1);
-        System.out.println( "\nArrayList bubbleWorst before sorting:\n" + bubbleWorst );
+        System.out.println( "\nArrayList bubbleWorst before sorting: " + bubbleWorst );
         kara.bubbleSort(bubbleWorst);
         System.out.print("...expecting:10 comparisons and 10 swaps\n" );
-        System.out.println( "ArrayList bubbleWorst after sorting:\n" + bubbleWorst );
+        System.out.println( "ArrayList bubbleWorst after sorting: " + bubbleWorst );
 
         System.out.println();
         System.out.println("------------------------------------------------------------------");
@@ -76,10 +76,10 @@ public class Driver{
         selectionSame.add(1);
         selectionSame.add(1);
         selectionSame.add(1);
-        System.out.println( "\nArrayList selectionSame before sorting:" + selectionSame );
+        System.out.println( "\nArrayList selectionSame before sorting: " + selectionSame );
         kara.selectionSort(selectionSame);
         System.out.print("...expecting: 10 comparisons and 0 swaps\n" );
-        System.out.println( "ArrayList selectionSame after sorting:\n" + selectionSame );
+        System.out.println( "ArrayList selectionSame after sorting: " + selectionSame );
 
         ArrayList selectionBestA = new ArrayList<Integer>();
         selectionBestA.add(1);
@@ -87,10 +87,10 @@ public class Driver{
         selectionBestA.add(3);
         selectionBestA.add(4);
         selectionBestA.add(5);
-        System.out.println( "\nArrayList selectionBestA before sorting:" + selectionBestA );
+        System.out.println( "\nArrayList selectionBestA before sorting: " + selectionBestA );
         kara.selectionSort(selectionBestA);
         System.out.print("...expecting: 10 comparisons and 0 swaps\n" );
-        System.out.println( "ArrayList selectionBestA after sorting:\n" + selectionBestA );
+        System.out.println( "ArrayList selectionBestA after sorting: " + selectionBestA );
 
         ArrayList selectionWorst = new ArrayList<Integer>();
         selectionWorst.add(5);
@@ -98,10 +98,10 @@ public class Driver{
         selectionWorst.add(3);
         selectionWorst.add(2);
         selectionWorst.add(1);
-        System.out.println( "\nArrayList selectionWorst before sorting:\n" + selectionWorst );
+        System.out.println( "\nArrayList selectionWorst before sorting: " + selectionWorst );
         kara.selectionSort(selectionWorst);
         System.out.print("...expecting: 10 comparisons and 4 swaps\n" );
-        System.out.println( "ArrayList selectionWorst after sorting:\n" + selectionWorst );
+        System.out.println( "ArrayList selectionWorst after sorting: " + selectionWorst );
 
         System.out.println();
         System.out.println("------------------------------------------------------------------");
@@ -121,10 +121,10 @@ public class Driver{
         insertionBestS.add(1);
         insertionBestS.add(1);
         insertionBestS.add(1);
-        System.out.println( "\nArrayList insertionBestS before sorting:\n" + insertionBestS );
+        System.out.println( "\nArrayList insertionBestS before sorting: " + insertionBestS );
         Sorts.bubbleSort(insertionBestS);
         System.out.print("...expecting: 10 comparisons and 0 swaps\n" );
-        System.out.println( "ArrayList insertionBestS after sorting:\n" + insertionBestS );
+        System.out.println( "ArrayList insertionBestS after sorting: " + insertionBestS );
 
         ArrayList insertionBestA = new ArrayList<Integer>();
         insertionBestA.add(1);
@@ -132,10 +132,10 @@ public class Driver{
         insertionBestA.add(3);
         insertionBestA.add(4);
         insertionBestA.add(5);
-        System.out.println( "\nArrayList insertionBestA before sorting:\n" + insertionBestA );
+        System.out.println( "\nArrayList insertionBestA before sorting: " + insertionBestA );
         Sorts.bubbleSort(insertionBestA);
         System.out.print("...expecting: 10 comparisons and 0 swaps\n" );
-        System.out.println( "ArrayList insertionBestA after sorting:\n" + insertionBestA );
+        System.out.println( "ArrayList insertionBestA after sorting: " + insertionBestA );
 
         ArrayList insertionWorst = new ArrayList<Integer>();
         insertionWorst.add(5);
@@ -143,9 +143,9 @@ public class Driver{
         insertionWorst.add(3);
         insertionWorst.add(2);
         insertionWorst.add(1);
-        System.out.println( "\nArrayList insertionWorst before sorting:\n" + insertionWorst );
+        System.out.println( "\nArrayList insertionWorst before sorting: " + insertionWorst );
         kara.bubbleSort(insertionWorst);
         System.out.print("...expecting: 10 comparisons and 10 swaps\n" );
-        System.out.println( "ArrayList insertionWorst after sorting:\n" + insertionWorst );
+        System.out.println( "ArrayList insertionWorst after sorting: " + insertionWorst );
     }
 }

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 @SuppressWarnings("unchecked")
 
-public class Sorts{
+public class Sorts {
 
   static int _bubbleSwap = 0;
   static int _selectionSwap = 0;
@@ -41,6 +41,7 @@ public class Sorts{
         _selectionComparison++;
         if (data.get(i).compareTo(data.get(maxPos)) > 0) {
           maxPos = i;
+          _selectionSwap++;
         }
       }
       if (maxPos != pass){

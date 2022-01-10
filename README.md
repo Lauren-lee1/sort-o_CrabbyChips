@@ -22,7 +22,7 @@
 * Best: [1, 2, 3, 4, 5]
   * Total Comparisons: 15
   * Total Swaps: 0
-  * Big-O Classification: O(n^2)
+  * Big-O Classification: O(n<sup>2</sup>)
 
 * Worst: [5, 4, 3, 2, 1]; [1, 1, 1, 1, 1]
   * Total Comparisons: 15

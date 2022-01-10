@@ -18,6 +18,7 @@ public class Driver{
 
         //Bubble Sort
         System.out.println( "\nTesting Bubble Sort..." );
+        System.out.println();
 
         System.out.println("Bubble Sort Control:");
         for (int x = 0; x < 10; x++){
@@ -59,10 +60,10 @@ public class Driver{
 
         System.out.println();
         System.out.println("------------------------------------------------------------------");
-        System.out.println();
 
         //Selection Sort
         System.out.println( "\nTesting Selection Sort..." );
+        System.out.println();
 
         System.out.println("Selection Sort Control");
         for (int x = 0; x < 10; x++){
@@ -104,10 +105,10 @@ public class Driver{
 
         System.out.println();
         System.out.println("------------------------------------------------------------------");
-        System.out.println();
 
         //Insertion Sort
         System.out.println( "\nTesting Insertion Sort..." );
+        System.out.println();
 
         System.out.println("Insertion Sort Control");
         for (int x = 0; x < 10; x++){

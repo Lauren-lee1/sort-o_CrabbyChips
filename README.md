@@ -11,56 +11,59 @@
 ### Bubble Sort:
 * Best: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   * Description: An ArrayList of elements in ascending order or of the same elements.
-  * Reason:
+  * Reason: This is the best case(s) because it required no swaps.
   * Total Comparisons: 45
   * Total Swaps: 0
   * Big-O Classification: O(n)
 
 * Worst: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
   * Description: An ArrayList of elements in descending order.
-  * Reason:
+  * Reason: This is the worst case because it required the most amount of swaps.
   * Total Comparisons: 45
   * Total Swaps: 45
   * Big-O Classification: O(n<sup>2</sup>)
 ### Selection Sort:
 * Best: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   * Description: An ArrayList of elements in descending order or of the same elements.
-  * Reason:
+  * Reason: This is the best case(s) because it required the least amount of swaps.
   * Total Comparisons: 55
   * Total Swaps: 9
   * Big-O Classification: O(n<sup>2</sup>)
 
 * Worst: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   * Description: An ArrayList of elements in ascending order.
-  * Reason:
+  * Reason: This is the worst case because it required the most amount of swaps.
   * Total Comparisons: 55
   * Total Swaps: 45
   * Big-O Classification: O(n<sup>2</sup>)
 ### Insertion Sort:
 * Best: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   * Description: An ArrayList of elements in ascending order or of the same elements.
-  * Reason:
+  * Reason: This is the best case(s) because it required no swaps.
   * Total Comparisons: 9
   * Total Swaps: 0
   * Big-O Classification: O(n)
 
 * Worst: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
   * Description: An ArrayList of elements in descending order.
-  * Reason:
+  * Reason: This is the worst case because it required the most amount of swaps.
   * Total Comparisons: 45
   * Total Swaps: 45
   * Big-O Classification: O(n<sup>2</sup>)
 
 ## Conclusions
-### Arrays Populated of the Same Element:
-* Bubble Sort and Insertion Sort are more efficient, because they do not require any swaps.
-* While in Selection Sort, it requires swaps even though it would not need swaps theoretically.
+### Arrays Populated of the Random Elements:
+*
 ### Arrays Populated in Ascending Order:
-* This is the best case scenario for all three sort types, as no swaps are necessary.
-* However, Selection Sort the least efficient because it requires the most comparisons.
+* This is the best case scenario for Bubble Sort and Insertion Sort, as it required no swaps for both sorts.
+* However, Bubble Sort required more comparisons than Insertion Sort, 45 for Bubble Sort and 9 for Insertion Sort, although it being the best case scenario for both sorts.
+* Selection Sort the least efficient and has the worst case scenario because it requires the most swaps and comparisons.
 ### Arrays Populated in Descending Order:
-* This is the worst case scenario for all three sort types, as it requires the most swaps.
-* ! However, Selection Sort is the most efficient because it requires the least swaps, although it does require the most comparisons.
+* This is the worst case scenario for Bubble Sort and Insertion Sort, as it requires the most swaps and comparisons for both sorts.
+* Selection Sort is the most efficient and has the best case scenario because it requires the least swaps, although it does require the most comparisons.
+### Arrays Populated of the Same Element:
+* This is the best case scenario for all three sorts, as it required no swaps for Bubble Sort and Insertion Sort, and required the least amount of swaps for Selection Sort.
+* While in Selection Sort, it is less efficient than Bubble Sort and Insertion Sort because it still requires swaps even though it would not need swaps theoretically.
 ### Final Conclusions:
-* The most efficient sorts for the best case scenarios were Bubble Sort and Insertion Sort because they required no swaps and fewer comparisons.
+* ! The most efficient sorts for the best case scenarios were Bubble Sort and Insertion Sort because they required no swaps and fewer comparisons.
 * ! Selection Sort is the most efficient in the worst case scenario because it requires less swaps, but in the best case scenarios it requires more comparisons and sometimes more swaps than necessary.

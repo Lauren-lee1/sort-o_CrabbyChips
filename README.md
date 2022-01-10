@@ -9,46 +9,46 @@
 
 ## Best and Worst Case Scenario for Each
 ### Bubble Sort:
-* Best: [1, 1, 1, 1, 1]; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-  * Description: An ArrayList of the same elements or of elements in ascending order.
+* Best: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  * Description: An ArrayList of elements in ascending order or of the same elements.
   * Reason:
   * Total Comparisons: 45
   * Total Swaps: 0
   * Big-O Classification: O(n)
 
-* Worst: [5, 4, 3, 2, 1]
+* Worst: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
   * Description: An ArrayList of elements in descending order.
   * Reason:
-  * Total Comparisons: 10
-  * Total Swaps: 10
+  * Total Comparisons: 45
+  * Total Swaps: 45
   * Big-O Classification: O(n<sup>2</sup>)
 ### Selection Sort:
-* Best: [1, 2, 3, 4, 5]
-  * Description: An ArrayList of elements in ascending order.
+* Best: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  * Description: An ArrayList of elements in descending order or of the same elements.
   * Reason:
-  * Total Comparisons: 15
-  * Total Swaps: 4
+  * Total Comparisons: 55
+  * Total Swaps: 9
   * Big-O Classification: O(n<sup>2</sup>)
 
-* Worst: [1, 1, 1, 1, 1]; [5, 4, 3, 2, 1]
-  * Description: An ArrayList of the same elements or of elements in descending order.
+* Worst: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  * Description: An ArrayList of elements in ascending order.
   * Reason:
-  * Total Comparisons: 15
-  * Total Swaps: 10
+  * Total Comparisons: 55
+  * Total Swaps: 45
   * Big-O Classification: O(n<sup>2</sup>)
 ### Insertion Sort:
-* Best: [1, 1, 1, 1, 1]; [1, 2, 3, 4, 5]
-  * Description: An ArrayList of the same elements or of elements in ascending order.
+* Best: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  * Description: An ArrayList of elements in ascending order or of the same elements.
   * Reason:
-  * Total Comparisons: 10
+  * Total Comparisons: 9
   * Total Swaps: 0
   * Big-O Classification: O(n)
 
-* Worst: [5, 4, 3, 2, 1]
+* Worst: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
   * Description: An ArrayList of elements in descending order.
   * Reason:
-  * Total Comparisons: 10
-  * Total Swaps: 10
+  * Total Comparisons: 45
+  * Total Swaps: 45
   * Big-O Classification: O(n<sup>2</sup>)
 
 ## Conclusions

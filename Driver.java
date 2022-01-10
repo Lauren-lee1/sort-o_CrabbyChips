@@ -64,6 +64,12 @@ public class Driver{
       for( Integer i : test ) {
         kara.bubbleSort(populateDescend(i));
       }
+      System.out.println();
+
+      System.out.println("Same:");
+      for( Integer i : test ) {
+        kara.bubbleSort(populateSame(i));
+      }
 
       System.out.println();
       System.out.println();
@@ -87,8 +93,14 @@ public class Driver{
         kara.selectionSort(populateDescend(i));
       }
       System.out.println();
-      System.out.println();
 
+      System.out.println("Same:");
+      for( Integer i : test ) {
+        kara.selectionSort(populateSame(i));
+      }
+
+      System.out.println();
+      System.out.println();
       System.out.println("Insertion Sort:");
       System.out.println();
 
@@ -108,7 +120,12 @@ public class Driver{
       for( Integer i : test ) {
         kara.insertionSort(populateDescend(i));
       }
+      System.out.println();
 
+      System.out.println("Same:");
+      for( Integer i : test ) {
+        kara.insertionSort(populateSame(i));
+      }
 
 /**
         //Bubble Sort

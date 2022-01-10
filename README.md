@@ -12,26 +12,32 @@
 * Best: [1, 1, 1, 1, 1]; [1, 2, 3, 4, 5]
   * Total Comparisons: 10
   * Total Swaps: 0
+  * Big-O Classification: O(n)
 
 * Worst: [5, 4, 3, 2, 1]
   * Total Comparisons: 10
   * Total Swaps: 10
+  * Big-O Classification: O(n^2)
 ### Selection Sort:
 * Best: [1, 2, 3, 4, 5]
   * Total Comparisons: 15
   * Total Swaps: 0
+  * Big-O Classification: O(n^2)
 
 * Worst: [5, 4, 3, 2, 1]; [1, 1, 1, 1, 1]
   * Total Comparisons: 15
   * Total Swaps: 4
+  * Big-O Classification: O(n^2)
 ### Insertion Sort:
 * Best: [1, 1, 1, 1, 1]; [1, 2, 3, 4, 5]
   * Total Comparisons: 10
   * Total Swaps: 0
+  * Big-O Classification: O(n)
 
 * Worst: [5, 4, 3, 2, 1]
   * Total Comparisons: 10
   * Total Swaps: 10
+  * Big-O Classification: O(n^2)
 
 ## Conclusions
 ### Arrays Populated of the Same Element:
